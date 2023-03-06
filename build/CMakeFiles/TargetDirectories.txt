@@ -1,0 +1,4 @@
+/home/zigfried/PointCloudConverter/build/CMakeFiles/rebuild_cache.dir
+/home/zigfried/PointCloudConverter/build/CMakeFiles/edit_cache.dir
+/home/zigfried/PointCloudConverter/build/CMakeFiles/pcl_v.dir
+/home/zigfried/PointCloudConverter/build/CMakeFiles/bin2pcd.dir
