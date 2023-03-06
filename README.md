@@ -7,7 +7,7 @@
 Linux下，可以通过`hexdump`命令查看二进制文件，以`000000.bin`为例：
 
 
-```hexdump 000000.bin -n 32```
+```$ hexdump 000000.bin -n 32```
 
 ```
 0000000 199a 425c cccd 3ccc 7ae1 4004 0000 0000

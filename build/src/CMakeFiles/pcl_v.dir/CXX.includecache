@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zigfried/PointCloudConverter/pcl_v.cpp
+/home/zigfried/PointCloudConverter/src/pcl_v.cpp
 pcl/io/pcd_io.h
 -
 pcl/point_types.h

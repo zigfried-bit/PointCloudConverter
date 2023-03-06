@@ -40,7 +40,7 @@ int main(int argc, char** argv) {
     delete[] buffer;
 
     pcl::PCDWriter writer;
-    writer.write<pcl::PointXYZI>("../0.pcd", *cloud, false);
+    writer.write<pcl::PointXYZI>("../../000000.pcd", *cloud, false);
 
     return 0;
 }

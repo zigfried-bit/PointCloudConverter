@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles /home/zigfried/PointCloudConverter/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/zigfried/PointCloudConverter/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles /home/zigfried/PointCloudConverter/build/src/CMakeFiles/progress.marks
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,44 +97,102 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zigfried/PointCloudConverter/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named pcl_v
+# Convenience name for target.
+src/CMakeFiles/pcl_v.dir/rule:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/pcl_v.dir/rule
+.PHONY : src/CMakeFiles/pcl_v.dir/rule
 
-# Build rule for target.
-pcl_v: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcl_v
+# Convenience name for target.
+pcl_v: src/CMakeFiles/pcl_v.dir/rule
+
 .PHONY : pcl_v
 
 # fast build rule for target.
 pcl_v/fast:
-	$(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/build
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/build
 .PHONY : pcl_v/fast
 
-#=============================================================================
-# Target rules for targets named bin2pcd
+# Convenience name for target.
+src/CMakeFiles/bin2pcd.dir/rule:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bin2pcd.dir/rule
+.PHONY : src/CMakeFiles/bin2pcd.dir/rule
 
-# Build rule for target.
-bin2pcd: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 bin2pcd
+# Convenience name for target.
+bin2pcd: src/CMakeFiles/bin2pcd.dir/rule
+
 .PHONY : bin2pcd
 
 # fast build rule for target.
 bin2pcd/fast:
-	$(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/build
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/build
 .PHONY : bin2pcd/fast
+
+bin2pcd.o: bin2pcd.cpp.o
+
+.PHONY : bin2pcd.o
+
+# target to build an object file
+bin2pcd.cpp.o:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/bin2pcd.cpp.o
+.PHONY : bin2pcd.cpp.o
+
+bin2pcd.i: bin2pcd.cpp.i
+
+.PHONY : bin2pcd.i
+
+# target to preprocess a source file
+bin2pcd.cpp.i:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/bin2pcd.cpp.i
+.PHONY : bin2pcd.cpp.i
+
+bin2pcd.s: bin2pcd.cpp.s
+
+.PHONY : bin2pcd.s
+
+# target to generate assembly for a file
+bin2pcd.cpp.s:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/bin2pcd.cpp.s
+.PHONY : bin2pcd.cpp.s
+
+pcl_v.o: pcl_v.cpp.o
+
+.PHONY : pcl_v.o
+
+# target to build an object file
+pcl_v.cpp.o:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/pcl_v.cpp.o
+.PHONY : pcl_v.cpp.o
+
+pcl_v.i: pcl_v.cpp.i
+
+.PHONY : pcl_v.i
+
+# target to preprocess a source file
+pcl_v.cpp.i:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/pcl_v.cpp.i
+.PHONY : pcl_v.cpp.i
+
+pcl_v.s: pcl_v.cpp.s
+
+.PHONY : pcl_v.s
+
+# target to generate assembly for a file
+pcl_v.cpp.s:
+	cd /home/zigfried/PointCloudConverter/build && $(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/pcl_v.cpp.s
+.PHONY : pcl_v.cpp.s
 
 # Help Target
 help:
@@ -146,6 +204,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... pcl_v"
 	@echo "... bin2pcd"
+	@echo "... bin2pcd.o"
+	@echo "... bin2pcd.i"
+	@echo "... bin2pcd.s"
+	@echo "... pcl_v.o"
+	@echo "... pcl_v.i"
+	@echo "... pcl_v.s"
 .PHONY : help
 
 
@@ -157,6 +221,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zigfried/PointCloudConverter/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

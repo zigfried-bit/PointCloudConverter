@@ -53,75 +53,93 @@ CMAKE_BINARY_DIR = /home/zigfried/PointCloudConverter/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/pcl_v.dir/all
-all: CMakeFiles/bin2pcd.dir/all
+all: src/all
 
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: src/preinstall
 
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/pcl_v.dir/clean
-clean: CMakeFiles/bin2pcd.dir/clean
+clean: src/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/pcl_v.dir
+# Directory level rules for directory src
+
+# Recursive "all" directory target.
+src/all: src/CMakeFiles/pcl_v.dir/all
+src/all: src/CMakeFiles/bin2pcd.dir/all
+
+.PHONY : src/all
+
+# Recursive "preinstall" directory target.
+src/preinstall:
+
+.PHONY : src/preinstall
+
+# Recursive "clean" directory target.
+src/clean: src/CMakeFiles/pcl_v.dir/clean
+src/clean: src/CMakeFiles/bin2pcd.dir/clean
+
+.PHONY : src/clean
+
+#=============================================================================
+# Target rules for target src/CMakeFiles/pcl_v.dir
 
 # All Build rule for target.
-CMakeFiles/pcl_v.dir/all:
-	$(MAKE) -f CMakeFiles/pcl_v.dir/build.make CMakeFiles/pcl_v.dir/depend
-	$(MAKE) -f CMakeFiles/pcl_v.dir/build.make CMakeFiles/pcl_v.dir/build
+src/CMakeFiles/pcl_v.dir/all:
+	$(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/depend
+	$(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zigfried/PointCloudConverter/build/CMakeFiles --progress-num=3,4 "Built target pcl_v"
-.PHONY : CMakeFiles/pcl_v.dir/all
+.PHONY : src/CMakeFiles/pcl_v.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/pcl_v.dir/rule: cmake_check_build_system
+src/CMakeFiles/pcl_v.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/pcl_v.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/pcl_v.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles 0
-.PHONY : CMakeFiles/pcl_v.dir/rule
+.PHONY : src/CMakeFiles/pcl_v.dir/rule
 
 # Convenience name for target.
-pcl_v: CMakeFiles/pcl_v.dir/rule
+pcl_v: src/CMakeFiles/pcl_v.dir/rule
 
 .PHONY : pcl_v
 
 # clean rule for target.
-CMakeFiles/pcl_v.dir/clean:
-	$(MAKE) -f CMakeFiles/pcl_v.dir/build.make CMakeFiles/pcl_v.dir/clean
-.PHONY : CMakeFiles/pcl_v.dir/clean
+src/CMakeFiles/pcl_v.dir/clean:
+	$(MAKE) -f src/CMakeFiles/pcl_v.dir/build.make src/CMakeFiles/pcl_v.dir/clean
+.PHONY : src/CMakeFiles/pcl_v.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/bin2pcd.dir
+# Target rules for target src/CMakeFiles/bin2pcd.dir
 
 # All Build rule for target.
-CMakeFiles/bin2pcd.dir/all:
-	$(MAKE) -f CMakeFiles/bin2pcd.dir/build.make CMakeFiles/bin2pcd.dir/depend
-	$(MAKE) -f CMakeFiles/bin2pcd.dir/build.make CMakeFiles/bin2pcd.dir/build
+src/CMakeFiles/bin2pcd.dir/all:
+	$(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/depend
+	$(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zigfried/PointCloudConverter/build/CMakeFiles --progress-num=1,2 "Built target bin2pcd"
-.PHONY : CMakeFiles/bin2pcd.dir/all
+.PHONY : src/CMakeFiles/bin2pcd.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/bin2pcd.dir/rule: cmake_check_build_system
+src/CMakeFiles/bin2pcd.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/bin2pcd.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 src/CMakeFiles/bin2pcd.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zigfried/PointCloudConverter/build/CMakeFiles 0
-.PHONY : CMakeFiles/bin2pcd.dir/rule
+.PHONY : src/CMakeFiles/bin2pcd.dir/rule
 
 # Convenience name for target.
-bin2pcd: CMakeFiles/bin2pcd.dir/rule
+bin2pcd: src/CMakeFiles/bin2pcd.dir/rule
 
 .PHONY : bin2pcd
 
 # clean rule for target.
-CMakeFiles/bin2pcd.dir/clean:
-	$(MAKE) -f CMakeFiles/bin2pcd.dir/build.make CMakeFiles/bin2pcd.dir/clean
-.PHONY : CMakeFiles/bin2pcd.dir/clean
+src/CMakeFiles/bin2pcd.dir/clean:
+	$(MAKE) -f src/CMakeFiles/bin2pcd.dir/build.make src/CMakeFiles/bin2pcd.dir/clean
+.PHONY : src/CMakeFiles/bin2pcd.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

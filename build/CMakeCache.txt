@@ -184,7 +184,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=Test
+CMAKE_PROJECT_NAME:STATIC=PointCloudConverter
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -476,17 +476,17 @@ PCL_VISUALIZATION_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_visual
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
 
+//Value Computed by CMake
+PointCloudConverter_BINARY_DIR:STATIC=/home/zigfried/PointCloudConverter/build/src
+
+//Value Computed by CMake
+PointCloudConverter_SOURCE_DIR:STATIC=/home/zigfried/PointCloudConverter/src
+
 //Path to a library.
 QHULL_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libqhull.so
 
 //Path to a library.
 QHULL_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libqhull.so
-
-//Value Computed by CMake
-Test_BINARY_DIR:STATIC=/home/zigfried/PointCloudConverter/build
-
-//Value Computed by CMake
-Test_SOURCE_DIR:STATIC=/home/zigfried/PointCloudConverter
 
 //Path to a file.
 USB_10_INCLUDE_DIR:PATH=/usr/include
@@ -649,7 +649,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/zigfried/PointCloudConverter/bin2pcd.cpp
+/home/zigfried/PointCloudConverter/src/bin2pcd.cpp
 iostream
 -
 fstream
