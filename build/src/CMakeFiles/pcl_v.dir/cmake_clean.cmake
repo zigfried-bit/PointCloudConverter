@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pcl_v.dir/pcl_v.cpp.o"
+  "CMakeFiles/pcl_v.dir/pcl_v.cpp.o.d"
   "pcl_v"
   "pcl_v.pdb"
 )

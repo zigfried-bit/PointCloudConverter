@@ -41,6 +41,7 @@ int main(int argc, char** argv) {
     delete[] buffer;
 
     pcl::PCDWriter writer;
+    // 将点云保存为ocd文件，数据格式为ascii
     writer.write<pcl::PointXYZI>("../../000000.pcd", *cloud, false);
     printf("转换完成，用时 %f ms\n", timeConsume.toc());
     return 0;

@@ -10,7 +10,10 @@ find_package(PCL REQUIRED)
 include_directories(${PCL_INCLUDE_DIRS})
 
 add_executable(bin2pcd bin2pcd.cpp)
-target_link_libraries( bin2pcd ${PCL_LIBRARIES})
+target_link_libraries(bin2pcd ${PCL_LIBRARIES})
+
+add_executable(csv2pcd csv2pcd.cpp)
+target_link_libraries(csv2pcd ${PCL_LIBRARIES})
 
 add_executable(pcl_v pcl_v.cpp)
 target_link_libraries( pcl_v ${PCL_LIBRARIES})
