@@ -1,5 +1,10 @@
 # PointCloudConverter
 ## 1.bin格式的点云文件转换为.pcd格式
+> 源文件：bin2pcd.cpp
+
+> 参考：https://github.com/yanii/kitti-pcl
+
+
 具体来说，是将kitti数据集中的BIN格式的Velodyne 3D laser scan data转换为PCD格式。
 
 根据kitti官方的数据说明，BIN文件中存储的是N $\times$ 4大小的浮点数矩阵。N指的是点云数量，4是指点云的x, y, z, intensity。这些信息以二进制的形式存储，数据类型为`float`。

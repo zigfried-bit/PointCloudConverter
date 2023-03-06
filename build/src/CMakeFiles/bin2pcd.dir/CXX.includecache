@@ -6,6 +6,14 @@
 
 #IncludeRegexTransform: 
 
+../include/tic_toc.h
+ctime
+-
+cstdlib
+-
+chrono
+-
+
 /home/zigfried/PointCloudConverter/src/bin2pcd.cpp
 iostream
 -
@@ -17,6 +25,8 @@ pcl/point_types.h
 -
 pcl/io/pcd_io.h
 -
+tic_toc.h
+/home/zigfried/PointCloudConverter/src/tic_toc.h
 
 /usr/include/eigen3/Eigen/Cholesky
 Core

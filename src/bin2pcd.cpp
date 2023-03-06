@@ -8,7 +8,7 @@
 #include <pcl/point_types.h>
 #include <pcl/io/pcd_io.h>
 
-float binary_to_float(const char* binary);
+#include "tic_toc.h"
 //读入1帧bin点云数据
 int main(int argc, char** argv) {
     const std::string infile_name(argv[1]);
@@ -28,6 +28,7 @@ int main(int argc, char** argv) {
     buffer = new char[size];
 
     pcl::PointXYZI pt;
+    TicToc timeConsume;
     for(size_t i = 0; infile.good() && !infile.eof(); ++i){
         infile.read(buffer, size);
         memcpy(&pt.x, buffer, sizeof(float));
@@ -41,7 +42,7 @@ int main(int argc, char** argv) {
 
     pcl::PCDWriter writer;
     writer.write<pcl::PointXYZI>("../../000000.pcd", *cloud, false);
-
+    printf("转换完成，用时 %f ms\n", timeConsume.toc());
     return 0;
 }
 
