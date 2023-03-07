@@ -1,5 +1,5 @@
 # PointCloudConverter
-## 1.bin格式的点云文件转换为.pcd格式
+## 1.bin格式的点云文件转换为pcd格式
 > 源文件：bin2pcd.cpp
 
 > 参考：https://github.com/yanii/kitti-pcl
@@ -26,3 +26,11 @@ Linux下，可以通过`hexdump`命令查看二进制文件，以`000000.bin`为
 
 
 实际上，以字节为单位读取文件时，读取的顺序是“9a19 5c42”，这说明数据遵照little endian(小端模式)的存储顺序，即低地址存放最低有效字节。
+
+## 2.csv格式的点云文件转换为pcd格式
+> 源文件：csv2pcd.cpp
+
+> 参考：https://github.com/streetdrone-home/Autoware
+
+
+具体来说，是将kitti数据集中的BIN格式的Velodyne 3D laser scan data转换为PCD格式。
